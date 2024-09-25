@@ -15,6 +15,16 @@ int main(int argc, char *argv[])
 	//local variables which hold values
 	int i;
 	int z = 0;
+	int *values;
+
+	values = (int *)malloc(sizeof(int)*5);
+
+	printf("argc address is %p \n", &argc);
+	printf("local variable i in stack address is %p \n", &i);
+	printf("heap malloc address is %p \n", values);
+	printf("uninitialized x address is %p \n", &x);
+	printf("initialized y address is %p \n", &y);
+
 	//array of size 5 with all elements initialized to 0
 	int array1[5] = {0,1,2,3,4};
 
